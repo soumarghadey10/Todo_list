@@ -1,0 +1,98 @@
+body{
+  background-color: #faca6b;
+}
+.comment-box {
+    width: 100%;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 3px solid #1a0606;
+    border-radius: 10px;
+  }
+  
+  .comment-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .comment-box form {
+    margin-bottom: 20px;
+  }
+  
+  .comment-box input {
+    width: 670px;
+    padding: 10px;
+    border: 3px solid #200505;
+    border-radius: 10px;
+    resize: none;
+  }
+  
+  .comment-box button {
+    background-color: #ec421c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .comment-box button:hover {
+    background-color: #020802;
+  }
+  
+  .comment-box .comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid #1b0606;
+    border-radius: 5px;
+    position: relative;
+  }
+  h1{
+    text-align: center;
+  }
+  ul li{
+    list-style: none;
+    font-size:25px;
+    padding: 13px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 10px;
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png) ;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left:15px;
+  }
+  ul li.checked{
+    color: #0f0f0f;
+    text-decoration: line-through;
+  }
+  ul li.checked::before{
+    background-image: url(checked.png) ;
+  }
+  ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  ul li span:hover{
+    background: #9d9ea6;
+    color: #0f0f0f;
+  
+  }
